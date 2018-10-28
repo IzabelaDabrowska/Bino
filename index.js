@@ -1,4 +1,6 @@
-window.onload = function () {
+$(document).ready(function(){
+    $('.slideshow').slick();
+
     var links = document.querySelectorAll('.nav-menu li a');
     var selectedLink = document.querySelectorAll('.nav-menu li a.active')[0];
     for (var i = 0; i < links.length; i++) {
@@ -9,4 +11,4 @@ window.onload = function () {
             selectedLink = target;
         })
     }
-};
+});
