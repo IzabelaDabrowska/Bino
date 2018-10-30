@@ -41,7 +41,7 @@ body {
     justify-content: space-between;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 14pt;
+    font-size: 14px;
 }
 @media only screen and (max-width: 1900px) {
     .nav-menu {
@@ -178,7 +178,7 @@ body {
 }
 .welcome-subtitle {
     text-transform: capitalize;
-    font-size: 24pt;
+    font-size: 24px;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 5px 0;
 }
@@ -214,9 +214,9 @@ body {
     background-color: #f4f5f9;
 }
 .welcome-informction {
-    font-size: 14pt;
+    font-size: 14px;
     text-align: center;
-    width: 800px;
+    width: 600px;
     padding: 50px 0;
 }
 .welcome-buttons {
@@ -287,13 +287,14 @@ span::before, span::after{
     width: 225px;
     outline: none;
     text-transform: uppercase;
-    font-size: 10pt;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.1em;
     font-family: 'Open Sans', sans-serif;
     color: #f4f5f9;
     cursor: pointer;
     transition: all 0.5s;
+    border-radius: 3px;
 }
 .welcome-button_dangerous {
     background-color: #e74c3c;
@@ -302,4 +303,36 @@ span::before, span::after{
 .welcome-button_soft {
     background-color: transparent;
     border: 1px solid #f4f5f9;
+}
+.triangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 123px;
+    position: relative;
+    width: 100%;
+    height: 155px;
+}
+.triangle img {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+}
+.triangle-left {
+    top: 0;
+    width: 50%;
+    height: 123px;
+    border-bottom: 123px solid #ffffff;
+    border-right: 1000px solid transparent;
+    position: relative;
+}
+.triangle-right {
+    top: 0;
+    width: 50%;
+    height: 123px;
+    border-bottom: 123px solid #ffffff;
+    border-left: 1000px solid transparent;
+    position: relative;
 }
