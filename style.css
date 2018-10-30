@@ -10,13 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Open Sans', sans-serif;
-    /*font-family: 'Source Sans Pro', sans-serif;*/
 }
 .page-element {
     display: flex;
     flex-direction: column;
 }
 .nav-bar {
+    z-index: 100;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -41,11 +41,20 @@ body {
     justify-content: space-between;
     list-style-type: none;
     text-transform: uppercase;
+    font-size: 14pt;
+}
+@media only screen and (max-width: 1900px) {
+    .nav-menu {
+        font-size: 12pt;
+    }
 }
 .nav-menu li a {
     text-decoration: none;
     color: #f4f5f9;
     transition: all 0.6s;
+}
+.nav-menu li a:hover {
+    color: #e74c3c;
 }
 .active {
     border-bottom: 1px solid #e74c3c;
@@ -59,29 +68,22 @@ body {
 }
 .slideshow div img {
     height: 980px;
-    width: auto;
-}
-.slideshow-blanket {
-    position: absolute;
-    height: 980px;
     width: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(0,0,0,0.7);
 }
 .button-next {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 22px);
     right: 25px;
     z-index: 100;
     border: none;
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
     outline: none;
     padding: 0;
     opacity: 0.3;
     cursor: pointer;
     border-radius: 3px;
+    transition: all 0.5s;
 }
 .button-next:hover {
     background-color: #e74c3c;
@@ -93,24 +95,26 @@ body {
     transform: rotate(-45deg);
     width: 15px;
     height: 15px;
-    margin-left: 7px;
+    margin-left: 12px;
 }
 .button-next:hover .button-next_icon {
     border-color: #f4f5f9;
+    transition: all 0.5s;
 }
 .button-prev {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 22px);
     left: 25px;
     z-index: 100;
     border: none;
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
     outline: none;
     padding: 0;
     opacity: 0.3;
     cursor: pointer;
     border-radius: 3px;
+    transition: all 0.5s;
 }
 .button-prev:hover {
     background-color: #e74c3c;
@@ -122,10 +126,11 @@ body {
     transform: rotate(135deg);
     width: 15px;
     height: 15px;
-    margin-left: 12px;
+    margin-left: 16px;
 }
 .button-prev:hover .button-prev_icon {
     border-color: #f4f5f9;
+    transition: all 0.5s;
 }
 .slideshow-dots {
     list-style-type: none;
@@ -155,4 +160,146 @@ body {
 }
 .slick-active button {
     background-color: #f4f5f9 !important;
+}
+.slideshow-blanket {
+    position: absolute;
+    height: 980px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.welcome-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f4f5f9;
+}
+.welcome-subtitle {
+    text-transform: capitalize;
+    font-size: 24pt;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 5px 0;
+}
+.welcome-content h1 {
+    text-transform: uppercase;
+    font-size: 72pt;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+.welcome-decoration {
+    width: 194px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.welcome-decoration div:nth-child(1) {
+    height: 1px;
+    width: 80px;
+    background-color: #f4f5f9;
+}
+.welcome-decoration div:nth-child(2) {
+    height: 6px;
+    width: 6px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+}
+.welcome-decoration div:nth-child(3) {
+    height: 1px;
+    width: 80px;
+    background-color: #f4f5f9;
+}
+.welcome-informction {
+    font-size: 14pt;
+    text-align: center;
+    width: 800px;
+    padding: 50px 0;
+}
+.welcome-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+}
+.button-animation{
+    display: inline-block;
+    position: relative;
+}
+span{
+    display: block;
+}
+.button-animation::before, .button-animation::after{
+    content:"";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #f4f5f9;
+}
+
+span::before, span::after{
+    content:"";
+    width: 1px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #f4f5f9;
+}
+.button-animation:hover::before, .button-animation:hover::after{
+    width: 100%;
+}
+.button-animation:hover span::before, .button-animation:hover span::after{
+    height: 100%;
+}
+.button-animation::before, .button-animation::after{
+    transition-delay: 0.2s;
+}
+.button-animation span::before, .button-animation span::after{
+    transition-delay: 0s;
+}
+.button-animation::before{
+    right: 0;
+    top: 0;
+}
+.button-animation::after{
+    left: 0;
+    bottom: 0;
+}
+.button-animation span::before{
+    left: 0;
+    top: 0;
+}
+.button-animation span::after{
+    right: 0;
+    bottom: 0;
+}
+.button-animation:hover::before, .button-animation:hover::after{
+    transition-delay: 0s;
+}
+.button-animation:hover span::before, .button-animation:hover span::after{
+    transition-delay: 0.2s;
+}
+.welcome-buttons button {
+    height: 56px;
+    width: 225px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 10pt;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-family: 'Open Sans', sans-serif;
+    color: #f4f5f9;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.welcome-button_dangerous {
+    background-color: #e74c3c;
+    border: none;
+}
+.welcome-button_soft {
+    background-color: transparent;
+    border: 1px solid #f4f5f9;
 }
