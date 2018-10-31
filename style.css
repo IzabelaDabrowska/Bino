@@ -41,11 +41,11 @@ body {
     justify-content: space-between;
     list-style-type: none;
     text-transform: uppercase;
-    font-size: 14pt;
+    font-size: 14px;
 }
 @media only screen and (max-width: 1900px) {
     .nav-menu {
-        font-size: 12pt;
+        font-size: 12px;
     }
 }
 .nav-menu li a {
@@ -178,7 +178,7 @@ body {
 }
 .welcome-subtitle {
     text-transform: capitalize;
-    font-size: 24pt;
+    font-size: 24px;
     font-family: 'Source Sans Pro', sans-serif;
     margin: 5px 0;
 }
@@ -195,7 +195,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 30px;
+    margin: 10px;
 }
 .welcome-decoration div:nth-child(1) {
     height: 1px;
@@ -214,10 +214,10 @@ body {
     background-color: #f4f5f9;
 }
 .welcome-informction {
-    font-size: 14pt;
+    font-size: 14px;
     text-align: center;
-    width: 800px;
-    padding: 50px 0;
+    width: 600px;
+    margin: 20px 0 80px 0;
 }
 .welcome-buttons {
     display: flex;
@@ -234,7 +234,7 @@ span{
 .button-animation::before, .button-animation::after{
     content:"";
     width: 0;
-    height: 1px;
+    height: 2px;
     position: absolute;
     transition: all 0.2s linear;
     background: #f4f5f9;
@@ -242,7 +242,7 @@ span{
 
 span::before, span::after{
     content:"";
-    width: 1px;
+    width: 2px;
     height:0;
     position: absolute;
     transition: all 0.2s linear;
@@ -287,13 +287,14 @@ span::before, span::after{
     width: 225px;
     outline: none;
     text-transform: uppercase;
-    font-size: 10pt;
+    font-size: 14px;
     font-weight: bold;
     letter-spacing: 0.1em;
     font-family: 'Open Sans', sans-serif;
     color: #f4f5f9;
     cursor: pointer;
     transition: all 0.5s;
+    border-radius: 3px;
 }
 .welcome-button_dangerous {
     background-color: #e74c3c;
@@ -302,4 +303,104 @@ span::before, span::after{
 .welcome-button_soft {
     background-color: transparent;
     border: 1px solid #f4f5f9;
+}
+.triangle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    bottom: 123px;
+    position: relative;
+    width: 100%;
+    height: 155px;
+    overflow: hidden;
+}
+.triangle img {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    bottom: 0;
+    z-index: 100;
+}
+.triangle-left {
+    top: 0;
+    width: 50%;
+    height: 123px;
+    border-bottom: 123px solid #ffffff;
+    border-right: 1020px solid transparent;
+    position: relative;
+}
+.triangle-right {
+    top: 0;
+    width: 50%;
+    height: 123px;
+    border-bottom: 123px solid #ffffff;
+    border-left: 1020px solid transparent;
+    position: relative;
+}
+.page-information {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 90px;
+}
+.page-element_information {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media only screen and (max-width: 600px) {
+    .page-element_information {
+        flex-direction: column;
+    }
+}
+.center-element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.square-icon {
+    border: 1px solid #E6E6E6;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.square-icon:hover {
+    border-color: #e74c3c;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+.square-icon:hover + h4 {
+    color: #e74c3c;
+    transition: all 0.5s;
+}
+.square-icon img {
+    transition: all 0.5s;
+}
+.square-icon:hover img{
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+}
+.center-element h4 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: 18px;
+    margin: 24px 0 0 0;
+    color: #585858;
+    transition: all 0.5s;
+}
+.decoration {
+    margin: 14px 0;
+    width: 40px;
+    height: 1px;
+    background-color: #585858;
+}
+.center-element p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 15px;
+    color: gray;
 }
