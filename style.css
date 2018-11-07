@@ -28,6 +28,11 @@ body {
 }
 @media only screen and (max-width: 992px) {
     .nav-bar {
+    justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .nav-bar {
         justify-content: space-around;
     }
 }
@@ -42,6 +47,11 @@ body {
 @media only screen and (max-width: 992px) {
     .navigation {
         width: 60%;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .navigation {
+        width: 50%;
     }
 }
 .nav-menu {
@@ -82,6 +92,11 @@ body {
         height: 750px;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .slideshow {
+        height: 850px;
+    }
+}
 .slideshow div img {
     height: 980px;
     width: 100%;
@@ -89,6 +104,11 @@ body {
 @media only screen and (max-width: 992px) {
     .slideshow  div img{
         height: 750px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .slideshow div img {
+        height: 850px;
     }
 }
 .slideshow-blanket {
@@ -102,6 +122,11 @@ body {
 @media only screen and (max-width: 992px) {
     .slideshow-blanket{
         height: 750px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .slideshow-blanket {
+        height: 850px;
     }
 }
 .button-next {
@@ -125,6 +150,12 @@ body {
         height: 33px;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .button-next {
+        width: 37px;
+        height: 37px;
+    }
+}
 .button-next:hover {
     background-color: #e74c3c;
     opacity: 1;
@@ -142,6 +173,13 @@ body {
         width: 12px;
         height: 12px;
         margin-left: 9px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .button-next_icon {
+        width: 13px;
+        height: 12px;
+        margin-left: 11px;
     }
 }
 .button-next:hover .button-next_icon {
@@ -169,6 +207,12 @@ body {
         height: 33px;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .button-prev {
+        width: 37px;
+        height: 37px;
+    }
+}
 .button-prev:hover {
     background-color: #e74c3c;
     opacity: 1;
@@ -186,6 +230,13 @@ body {
         width: 12px;
         height: 12px;
         margin-left: 13px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .button-prev_icon {
+        width: 13px;
+        height: 12px;
+        margin-left: 14px;
     }
 }
 .button-prev:hover .button-prev_icon {
@@ -212,6 +263,12 @@ body {
 @media only screen and (max-width: 992px) {
     #slick-slide-control00, #slick-slide-control01, #slick-slide-control02 {
         width: 12px;
+        height: 14px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    #slick-slide-control00, #slick-slide-control01, #slick-slide-control02 {
+        width: 14px;
         height: 14px;
     }
 }
@@ -245,6 +302,11 @@ body {
         font-size: 18px;
     }
 }
+@media only screen and (max-width: 1200px) {
+    .welcome-subtitle{
+        font-size: 20px;
+    }
+}
 .welcome-content h1 {
     text-transform: uppercase;
     font-size: 96px;
@@ -256,6 +318,11 @@ body {
 @media only screen and (max-width: 992px) {
     .welcome-content h1{
         font-size: 72px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .welcome-content h1{
+        font-size: 80px;
     }
 }
 .welcome-decoration {
@@ -301,6 +368,11 @@ body {
 @media only screen and (max-width: 992px) {
     .welcome-buttons{
         width: 360px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .welcome-buttons {
+        width: 398px;
     }
 }
 .button-animation{
@@ -380,6 +452,13 @@ span::before, span::after{
         height: 42px;
         width: 169px;
         font-size: 10px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .welcome-buttons button{
+        height: 46px;
+        width: 187px;
+        font-size: 12px;
     }
 }
 .welcome-button_dangerous {
