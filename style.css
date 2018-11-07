@@ -26,6 +26,11 @@ body {
     position: absolute;
     top: 0;
 }
+@media only screen and (max-width: 1024px) {
+    .nav-bar {
+        justify-content: space-around;
+    }
+}
 .nav-logo {
     width: 20%;
     display: flex;
@@ -33,6 +38,11 @@ body {
 }
 .navigation {
     width: 40%;
+}
+@media only screen and (max-width: 1024px) {
+    .navigation {
+        width: 60%;
+    }
 }
 .nav-menu {
     display: flex;
@@ -43,6 +53,7 @@ body {
     text-transform: uppercase;
     font-size: 14px;
 }
+
 @media only screen and (max-width: 1900px) {
     .nav-menu {
         font-size: 12px;
@@ -66,9 +77,32 @@ body {
     height: 980px;
     width: 100%;
 }
+@media only screen and (max-width: 1024px) {
+    .slideshow {
+        height: 750px;
+    }
+}
 .slideshow div img {
     height: 980px;
     width: 100%;
+}
+@media only screen and (max-width: 1024px) {
+    .slideshow  div img{
+        height: 750px;
+    }
+}
+.slideshow-blanket {
+    position: absolute;
+    height: 980px;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+@media only screen and (max-width: 1024px) {
+    .slideshow-blanket{
+        height: 750px;
+    }
 }
 .button-next {
     position: absolute;
@@ -85,6 +119,12 @@ body {
     border-radius: 3px;
     transition: all 0.5s;
 }
+@media only screen and (max-width: 1024px) {
+    .button-next {
+        width: 33px;
+        height: 33px;
+    }
+}
 .button-next:hover {
     background-color: #e74c3c;
     opacity: 1;
@@ -96,6 +136,13 @@ body {
     width: 15px;
     height: 15px;
     margin-left: 12px;
+}
+@media only screen and (max-width: 1024px) {
+    .button-next_icon {
+        width: 12px;
+        height: 12px;
+        margin-left: 9px;
+    }
 }
 .button-next:hover .button-next_icon {
     border-color: #f4f5f9;
@@ -116,6 +163,12 @@ body {
     border-radius: 3px;
     transition: all 0.5s;
 }
+@media only screen and (max-width: 1024px) {
+    .button-prev {
+        width: 33px;
+        height: 33px;
+    }
+}
 .button-prev:hover {
     background-color: #e74c3c;
     opacity: 1;
@@ -127,6 +180,13 @@ body {
     width: 15px;
     height: 15px;
     margin-left: 16px;
+}
+@media only screen and (max-width: 1024px) {
+    .button-prev_icon {
+        width: 12px;
+        height: 12px;
+        margin-left: 13px;
+    }
 }
 .button-prev:hover .button-prev_icon {
     border-color: #f4f5f9;
@@ -149,6 +209,12 @@ body {
     background-color: transparent;
     font-size: 0;
 }
+@media only screen and (max-width: 1024px) {
+    #slick-slide-control00, #slick-slide-control01, #slick-slide-control02 {
+        width: 12px;
+        height: 14px;
+    }
+}
 #slick-slide-control00 {
     left: 48%;
 }
@@ -160,14 +226,6 @@ body {
 }
 .slick-active button {
     background-color: #f4f5f9 !important;
-}
-.slideshow-blanket {
-    position: absolute;
-    height: 980px;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background-color: rgba(0,0,0,0.7);
 }
 .welcome-content {
     display: flex;
@@ -182,12 +240,23 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 5px 0;
 }
+@media only screen and (max-width: 1024px) {
+    .welcome-subtitle{
+        font-size: 18px;
+    }
+}
 .welcome-content h1 {
     text-transform: uppercase;
-    font-size: 72pt;
+    font-size: 96px;
     margin: 0;
     font-weight: 600;
     letter-spacing: 0.08em;
+    text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+    .welcome-content h1{
+        font-size: 72px;
+    }
 }
 .welcome-decoration {
     width: 194px;
@@ -219,10 +288,20 @@ body {
     width: 600px;
     margin: 20px 0 80px 0;
 }
+@media only screen and (max-width: 1024px) {
+    .welcome-informction{
+        font-size: 12px;
+    }
+}
 .welcome-buttons {
     display: flex;
     justify-content: space-between;
     width: 480px;
+}
+@media only screen and (max-width: 1024px) {
+    .welcome-buttons{
+        width: 360px;
+    }
 }
 .button-animation{
     display: inline-block;
@@ -296,6 +375,13 @@ span::before, span::after{
     transition: all 0.5s;
     border-radius: 3px;
 }
+@media only screen and (max-width: 1024px) {
+    .welcome-buttons button{
+        height: 42px;
+        width: 169px;
+        font-size: 10px;
+    }
+}
 .welcome-button_dangerous {
     background-color: #e74c3c;
     border: none;
@@ -321,6 +407,7 @@ span::before, span::after{
     bottom: 0;
     z-index: 100;
 }
+
 .triangle-left {
     top: 0;
     width: 50%;
@@ -348,6 +435,11 @@ span::before, span::after{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+@media only screen and (max-width: 1024px) {
+    .page-element_information {
+        width: 90%;
+    }
 }
 @media only screen and (max-width: 600px) {
     .page-element_information {
@@ -397,15 +489,32 @@ span::before, span::after{
     color: #585858;
     transition: all 0.5s;
 }
+@media only screen and (max-width: 1024px) {
+    .center-element h4 {
+        font-size: 16px;
+        margin: 22px 0 0 0;
+    }
+}
 .decoration {
     margin: 14px 0;
     width: 40px;
     height: 1px;
     background-color: #585858;
 }
+@media only screen and (max-width: 1024px) {
+    .decoration {
+        margin: 12px 0;
+    }
+}
 .center-element p {
     font-size: 12px;
     text-align: center;
     margin: 0 15px;
     color: gray;
+}
+@media only screen and (max-width: 1024px) {
+    .center-element p {
+        font-size: 12px;
+        margin: 0 12px;
+    }
 }
