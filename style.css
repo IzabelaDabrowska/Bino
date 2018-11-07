@@ -26,7 +26,7 @@ body {
     position: absolute;
     top: 0;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .nav-bar {
         justify-content: space-around;
     }
@@ -39,7 +39,7 @@ body {
 .navigation {
     width: 40%;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .navigation {
         width: 60%;
     }
@@ -77,7 +77,7 @@ body {
     height: 980px;
     width: 100%;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .slideshow {
         height: 750px;
     }
@@ -86,7 +86,7 @@ body {
     height: 980px;
     width: 100%;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .slideshow  div img{
         height: 750px;
     }
@@ -99,7 +99,7 @@ body {
     top: 0;
     background-color: rgba(0,0,0,0.7);
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .slideshow-blanket{
         height: 750px;
     }
@@ -119,7 +119,7 @@ body {
     border-radius: 3px;
     transition: all 0.5s;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .button-next {
         width: 33px;
         height: 33px;
@@ -137,7 +137,7 @@ body {
     height: 15px;
     margin-left: 12px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .button-next_icon {
         width: 12px;
         height: 12px;
@@ -163,7 +163,7 @@ body {
     border-radius: 3px;
     transition: all 0.5s;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .button-prev {
         width: 33px;
         height: 33px;
@@ -181,7 +181,7 @@ body {
     height: 15px;
     margin-left: 16px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .button-prev_icon {
         width: 12px;
         height: 12px;
@@ -209,7 +209,7 @@ body {
     background-color: transparent;
     font-size: 0;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     #slick-slide-control00, #slick-slide-control01, #slick-slide-control02 {
         width: 12px;
         height: 14px;
@@ -240,7 +240,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 5px 0;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .welcome-subtitle{
         font-size: 18px;
     }
@@ -253,7 +253,7 @@ body {
     letter-spacing: 0.08em;
     text-align: center;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .welcome-content h1{
         font-size: 72px;
     }
@@ -288,7 +288,7 @@ body {
     width: 600px;
     margin: 20px 0 80px 0;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .welcome-informction{
         font-size: 12px;
     }
@@ -298,7 +298,7 @@ body {
     justify-content: space-between;
     width: 480px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .welcome-buttons{
         width: 360px;
     }
@@ -375,7 +375,7 @@ span::before, span::after{
     transition: all 0.5s;
     border-radius: 3px;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .welcome-buttons button{
         height: 42px;
         width: 169px;
@@ -436,7 +436,7 @@ span::before, span::after{
     flex-direction: row;
     justify-content: space-between;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .page-element_information {
         width: 90%;
     }
@@ -489,7 +489,7 @@ span::before, span::after{
     color: #585858;
     transition: all 0.5s;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .center-element h4 {
         font-size: 16px;
         margin: 22px 0 0 0;
@@ -501,7 +501,7 @@ span::before, span::after{
     height: 1px;
     background-color: #585858;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .decoration {
         margin: 12px 0;
     }
@@ -512,7 +512,7 @@ span::before, span::after{
     margin: 0 15px;
     color: gray;
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 992px) {
     .center-element p {
         font-size: 12px;
         margin: 0 12px;
